@@ -1,0 +1,41 @@
+{
+  "name": "rapidmvc-builder",
+  "displayName": "RapidMVC Builder",
+  "description": "RapidMVC Builder is a Visual Studio Code extension that streamlines the creation of a complete MVC folder structure for Node.js applications. With a single command, generate essential directories and files, including controllers, routes, utilities, and a customizable server file, to kickstart your development process efficiently.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.generateMVC"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.generateMVC",
+        "title": "Generate MVC Folder Structure"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amalsaj/rapidMVCBuilder.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.94.0",
+    "@types/mocha": "^10.0.8",
+    "@types/node": "20.x",
+    "eslint": "^9.11.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
